@@ -1,0 +1,15 @@
+.react-flow__edge-path,
+.react-flow__connection-path {
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  transition: stroke 180ms ease, stroke-width 180ms ease, opacity 180ms ease;
+}
+
+.react-flow__edge.animated path {
+  stroke-dasharray: 12 8;
+  animation-duration: 0.75s;
+}
+
+.react-flow__edge.selected .react-flow__edge-path {
+  filter: drop-shadow(0 0 8px rgba(99, 245, 231, 0.45));
+}
